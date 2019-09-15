@@ -67,7 +67,18 @@ namespace Inventory_Management_System_Layered
             this.WindowState = FormWindowState.Minimized;
         }
 
+        private void Label1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
         private void Form1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void PictureBox3_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
@@ -132,5 +143,7 @@ namespace Inventory_Management_System_Layered
             formPass.Show();
             this.Hide();
         }
+
+
     }
 }

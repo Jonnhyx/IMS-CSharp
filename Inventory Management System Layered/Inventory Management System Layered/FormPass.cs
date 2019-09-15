@@ -3,7 +3,6 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using Dominio;
-using Soporte;
 
 namespace Inventory_Management_System_Layered
 {
@@ -36,13 +35,21 @@ namespace Inventory_Management_System_Layered
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-
         private void Panel1_MouseDown_1(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-
+        private void LabelPass_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+        private void PictureBox3_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
         private void TxtDni_Leave(object sender, EventArgs e)
         {
             if (txtDni.Text == "")
@@ -63,12 +70,18 @@ namespace Inventory_Management_System_Layered
         
         private void BtnPass_Click(object sender, EventArgs e)
         {
-            if (txtDni.Text != "Username" && txtDni.TextLength > 7)
+            if (txtDni.Text != "Introduce el DNI" && txtDni.TextLength > 7)
             {
                 UserModel user = new UserModel();
                 txtDni.Text = user.RecuPass(txtDni.Text);
             }
+            else
+            {
+                txtDni.Text = "Introduce el DNI";
+            }
                 
         }
+
+
     }
 }

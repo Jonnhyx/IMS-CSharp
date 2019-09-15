@@ -63,6 +63,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PictureBox3_MouseDown);
             // 
             // btnminimizar
             // 
@@ -92,12 +93,13 @@
             // 
             this.labelPass.AutoSize = true;
             this.labelPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPass.ForeColor = System.Drawing.Color.White;
-            this.labelPass.Location = new System.Drawing.Point(503, 0);
+            this.labelPass.ForeColor = System.Drawing.Color.Silver;
+            this.labelPass.Location = new System.Drawing.Point(431, 9);
             this.labelPass.Name = "labelPass";
-            this.labelPass.Size = new System.Drawing.Size(90, 31);
+            this.labelPass.Size = new System.Drawing.Size(180, 31);
             this.labelPass.TabIndex = 11;
-            this.labelPass.Text = "PASS";
+            this.labelPass.Text = "PASSWORD";
+            this.labelPass.MouseDown += new System.Windows.Forms.MouseEventHandler(this.LabelPass_MouseDown);
             // 
             // btnPass
             // 
