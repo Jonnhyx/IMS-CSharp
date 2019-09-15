@@ -1,0 +1,11 @@
+C:\Users\jontn\source\repos\Login_Capas\Soporte\bin\Debug\Soporte.dll
+C:\Users\jontn\source\repos\Login_Capas\Soporte\bin\Debug\Soporte.pdb
+C:\Users\jontn\source\repos\Login_Capas\Soporte\obj\Debug\Soporte.csprojAssemblyReference.cache
+C:\Users\jontn\source\repos\Login_Capas\Soporte\obj\Debug\Soporte.csproj.CoreCompileInputs.cache
+C:\Users\jontn\source\repos\Login_Capas\Soporte\obj\Debug\Soporte.dll
+C:\Users\jontn\source\repos\Login_Capas\Soporte\obj\Debug\Soporte.pdb
+C:\Users\jontn\Desktop\Login_Capas\Soporte\bin\Debug\Soporte.dll
+C:\Users\jontn\Desktop\Login_Capas\Soporte\bin\Debug\Soporte.pdb
+C:\Users\jontn\Desktop\Login_Capas\Soporte\obj\Debug\Soporte.csproj.CoreCompileInputs.cache
+C:\Users\jontn\Desktop\Login_Capas\Soporte\obj\Debug\Soporte.dll
+C:\Users\jontn\Desktop\Login_Capas\Soporte\obj\Debug\Soporte.pdb
