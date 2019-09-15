@@ -17,9 +17,6 @@ namespace Inventory_Management_System_Layered
         public FormPrincipal()
         {
             InitializeComponent();
-            lblNombre.Text = UserCache.FirstName;
-            lblApellido.Text = UserCache.LastName;
-            lblEmail.Text = UserCache.Email;
         }
         private void iconCerrar_Click(object sender, EventArgs e)
         {
@@ -83,8 +80,9 @@ namespace Inventory_Management_System_Layered
 
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
-          
-          
+            lblNombre.Text = UserCache.FirstName;
+            lblApellido.Text = UserCache.LastName;
+            lblEmail.Text = UserCache.Email;
         }
 
         private void BtnPRODUCTOS_Click(object sender, EventArgs e)
