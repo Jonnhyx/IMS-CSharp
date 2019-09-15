@@ -20,3 +20,14 @@ C:\Users\jontn\Desktop\Login_Capas\Dominio\obj\Debug\Dominio.csproj.CoreCompileI
 C:\Users\jontn\Desktop\Login_Capas\Dominio\obj\Debug\Dominio.csproj.CopyComplete
 C:\Users\jontn\Desktop\Login_Capas\Dominio\obj\Debug\Dominio.dll
 C:\Users\jontn\Desktop\Login_Capas\Dominio\obj\Debug\Dominio.pdb
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Dominio\bin\Debug\Dominio.dll
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Dominio\bin\Debug\Dominio.pdb
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Dominio\bin\Debug\AccesoDatos.dll
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Dominio\bin\Debug\Soporte.dll
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Dominio\bin\Debug\AccesoDatos.pdb
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Dominio\bin\Debug\Soporte.pdb
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Dominio\obj\Debug\Dominio.csproj.CopyComplete
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Dominio\obj\Debug\Dominio.dll
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Dominio\obj\Debug\Dominio.pdb

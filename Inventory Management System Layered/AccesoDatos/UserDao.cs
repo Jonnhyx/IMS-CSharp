@@ -178,21 +178,12 @@ namespace AccesoDatos
                     command.CommandType = CommandType.Text;
                     OleDbDataAdapter Adapter = new OleDbDataAdapter();
                     Adapter.SelectCommand = command;
-
-                    //command.CommandText = "Select * from Productos where IdProducto" + '"' + producto + '"';
-                    //command.CommandType = CommandType.Text;
-
-                    //Adapter.SelectCommand = command;
-                    //command.ExecuteReader();
-
                     try
                     {
                         command.ExecuteReader();
 
                     }
-#pragma warning disable CS0168 // La variable 'e' se ha declarado pero nunca se usa
                     catch (Exception e)
-#pragma warning restore CS0168 // La variable 'e' se ha declarado pero nunca se usa
                     {
                         MessageBox.Show("El parámetro introducido es erroneo");
                     }
@@ -231,7 +222,8 @@ namespace AccesoDatos
                 using (var command = new OleDbCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "UPDATE Productos SET Nombre = '" + nombre + "', Descripcion= '" + descripcion + "', Precio= '" + precio + "', Cantidad= '" + cantidad + "' WHERE IdProducto = '" + producto + "'";
+                    //command.CommandText = "UPDATE Productos SET Nombre = '" + nombre + "', Descripcion= '" + descripcion + "', Precio= '" + precio + "', Cantidad= '" + cantidad + "' WHERE IdProducto = '" + producto + "'";
+                    command.CommandText = "UPDATE Productos SET Nombre = '" + nombre + "', Descripcion= '" + descripcion + "', Precio= " + precio + ", Cantidad= " + cantidad + " WHERE IdProducto = '" + producto + "'";
                     command.CommandType = CommandType.Text;
                     OleDbDataAdapter Adapter = new OleDbDataAdapter();
                     Adapter.SelectCommand = command;
@@ -239,9 +231,7 @@ namespace AccesoDatos
                     {
                         command.ExecuteReader();
                     }
-#pragma warning disable CS0168 // La variable 'e' se ha declarado pero nunca se usa
                     catch (Exception e)
-#pragma warning restore CS0168 // La variable 'e' se ha declarado pero nunca se usa
                     {
                         MessageBox.Show("El parámetro introducido es erroneo");
                     }

@@ -78,9 +78,8 @@ namespace Inventory_Management_System_Layered
             }
             if (txtPrecio.Text.Contains(','))
             {
-                txtPrecio.Text = "Precio";
+                txtPrecio.Text = txtPrecio.Text.Replace(',','.');
                 txtPrecio.ForeColor = Color.Silver;
-                MessageBox.Show("Debes introducir el precio con '.' y no con ',' en el caso de ser decimal");
             }
         }
         private void TxtPrecio_Enter(object sender, EventArgs e)

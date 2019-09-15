@@ -18,3 +18,23 @@ C:\Users\jontn\source\repos\Inventory Management System Layered\Inventory Manage
 C:\Users\jontn\source\repos\Inventory Management System Layered\Inventory Management System Layered\obj\Debug\Inventory Management System Layered.csproj.CopyComplete
 C:\Users\jontn\source\repos\Inventory Management System Layered\Inventory Management System Layered\obj\Debug\Inventory Management System Layered.exe
 C:\Users\jontn\source\repos\Inventory Management System Layered\Inventory Management System Layered\obj\Debug\Inventory Management System Layered.pdb
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Inventory Management System Layered\bin\Debug\Inventory Management System Layered.exe.config
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Inventory Management System Layered\bin\Debug\Inventory Management System Layered.exe
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Inventory Management System Layered\bin\Debug\Inventory Management System Layered.pdb
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Inventory Management System Layered\bin\Debug\Dominio.dll
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Inventory Management System Layered\bin\Debug\Soporte.dll
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Inventory Management System Layered\bin\Debug\AccesoDatos.dll
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Inventory Management System Layered\bin\Debug\Dominio.pdb
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Inventory Management System Layered\bin\Debug\Soporte.pdb
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Inventory Management System Layered\bin\Debug\AccesoDatos.pdb
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Inventory Management System Layered\obj\Debug\Inventory Management System Layered.csprojAssemblyReference.cache
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Inventory Management System Layered\obj\Debug\Inventory_Management_System_Layered.FormLogin.resources
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Inventory Management System Layered\obj\Debug\Inventory_Management_System_Layered.FormPass.resources
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Inventory Management System Layered\obj\Debug\Inventory_Management_System_Layered.FormPrincipal.resources
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Inventory Management System Layered\obj\Debug\Inventory_Management_System_Layered.FormProductos.resources
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Inventory Management System Layered\obj\Debug\Inventory_Management_System_Layered.Properties.Resources.resources
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Inventory Management System Layered\obj\Debug\Inventory Management System Layered.csproj.GenerateResource.cache
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Inventory Management System Layered\obj\Debug\Inventory Management System Layered.csproj.CoreCompileInputs.cache
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Inventory Management System Layered\obj\Debug\Inventory Management System Layered.csproj.CopyComplete
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Inventory Management System Layered\obj\Debug\Inventory Management System Layered.exe
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Inventory Management System Layered\obj\Debug\Inventory Management System Layered.pdb
