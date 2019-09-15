@@ -23,9 +23,7 @@ namespace Inventory_Management_System_Layered
         }
         private void iconCerrar_Click(object sender, EventArgs e)
         {
-            FormLogin login = new FormLogin();
             this.Close();
-            login.Show();
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
