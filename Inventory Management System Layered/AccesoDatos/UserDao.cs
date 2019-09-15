@@ -181,15 +181,14 @@ namespace AccesoDatos
                     try
                     {
                         command.ExecuteReader();
-
                     }
                     catch (Exception e)
                     {
                         MessageBox.Show("El parámetro introducido es erroneo");
                     }
-                    return selectProductos();
                 }
             }
+            return selectProductos();
         }
 
         public DataTable deleteProductos(string producto){
@@ -204,9 +203,7 @@ namespace AccesoDatos
                     try{
                         command.ExecuteReader();
                     }
-#pragma warning disable CS0168 // La variable 'e' se ha declarado pero nunca se usa
                     catch (Exception e){
-#pragma warning restore CS0168 // La variable 'e' se ha declarado pero nunca se usa
                         MessageBox.Show("El parámetro introducido es erroneo");
                     }
                 }
