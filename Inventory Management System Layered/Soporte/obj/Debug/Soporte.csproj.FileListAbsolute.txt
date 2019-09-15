@@ -9,3 +9,9 @@ C:\Users\jontn\Desktop\Login_Capas\Soporte\bin\Debug\Soporte.pdb
 C:\Users\jontn\Desktop\Login_Capas\Soporte\obj\Debug\Soporte.csproj.CoreCompileInputs.cache
 C:\Users\jontn\Desktop\Login_Capas\Soporte\obj\Debug\Soporte.dll
 C:\Users\jontn\Desktop\Login_Capas\Soporte\obj\Debug\Soporte.pdb
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Soporte\bin\Debug\Soporte.dll
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Soporte\bin\Debug\Soporte.pdb
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Soporte\obj\Debug\Soporte.csprojAssemblyReference.cache
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Soporte\obj\Debug\Soporte.csproj.CoreCompileInputs.cache
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Soporte\obj\Debug\Soporte.dll
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Soporte\obj\Debug\Soporte.pdb

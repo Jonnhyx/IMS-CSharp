@@ -236,5 +236,37 @@ namespace AccesoDatos
             }
             return selectProductos();
         }
+
+        public void permisosUsuario()
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new OleDbCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "SELECT * FROM Permisos WHERE UserID=" + Soporte.UserCache.IdUser;
+                    command.CommandType = CommandType.Text;
+                    command.CommandType = CommandType.Text;
+                    OleDbDataReader reader = command.ExecuteReader();
+                    try{
+                        while (reader.Read()){
+                            UserCache.permisoProductos = reader.GetString(1);
+                            UserCache.permisoVentas = reader.GetString(2);
+                            UserCache.permisoClientes = reader.GetString(3);
+                            UserCache.permisoCompras = reader.GetString(4);
+                            UserCache.permisoProveedores = reader.GetString(5);
+                            UserCache.permisoEmpleados = reader.GetString(6);
+                            UserCache.permisoPagos = reader.GetString(7);
+                            UserCache.permisoReportes = reader.GetString(8);
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        MessageBox.Show("Error al Leer la tabla de permisos");
+                    }
+                }
+            }
+        }
     }
 }

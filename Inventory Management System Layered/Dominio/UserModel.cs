@@ -40,5 +40,9 @@ namespace Dominio
         {
             return userDao.updateProductos(producto, nombre, descripcion, precio, cantidad);
         }
+
+        public void permisosUsuario(){
+            userDao.permisosUsuario();
+        }
     }
 }

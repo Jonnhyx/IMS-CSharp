@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using Soporte;
+using Dominio;
 
 namespace Inventory_Management_System_Layered
 {
@@ -33,6 +34,36 @@ namespace Inventory_Management_System_Layered
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+        private void permisosUsuario()
+        {
+            UserModel user = new UserModel();
+            user.permisosUsuario();
+
+            if (UserCache.permisoProductos != "Sí"){
+                btnPRODUCTOS.Enabled = false;
+            }
+            if (UserCache.permisoVentas != "Sí"){
+                btnVENTAS.Enabled = false;
+            }
+            if (UserCache.permisoClientes != "Sí"){
+                btnCLIENTES.Enabled = false;
+            }
+            if (UserCache.permisoCompras != "Sí"){
+                btnCOMPRAS.Enabled = false;
+            }
+            if (UserCache.permisoProveedores != "Sí"){
+                btnPROVEEDORES.Enabled = false;
+            }
+            if (UserCache.permisoEmpleados != "Sí"){
+                btnEMPLEADOS.Enabled = false;
+            }
+            if (UserCache.permisoPagos != "Sí"){
+                btnPAGOS.Enabled = false;
+            }
+            if (UserCache.permisoReportes != "Sí"){
+                btnREPORTES.Enabled = false;
+            }
         }
 
         private void AbrirFormInPanel(object formHijo)
@@ -83,6 +114,7 @@ namespace Inventory_Management_System_Layered
             lblNombre.Text = UserCache.FirstName;
             lblApellido.Text = UserCache.LastName;
             lblEmail.Text = UserCache.Email;
+            permisosUsuario();
         }
 
         private void BtnPRODUCTOS_Click(object sender, EventArgs e)
@@ -90,5 +122,7 @@ namespace Inventory_Management_System_Layered
             FormProductos productos = new FormProductos();
             AbrirFormInPanel(productos);
         }
+
+       
     }
 }

@@ -16,6 +16,14 @@ namespace Soporte
         public static string Position { get; set; }
         public static string Email { get; set; }
         public static string DNI { get; set; }
+        public static string permisoProductos { get; set; }
+        public static string permisoVentas { get; set; }
+        public static string permisoClientes { get; set; }
+        public static string permisoCompras { get; set; }
+        public static string permisoProveedores { get; set; }
+        public static string permisoEmpleados { get; set; }
+        public static string permisoPagos { get; set; }
+        public static string permisoReportes { get; set; }
 
     }
 }
