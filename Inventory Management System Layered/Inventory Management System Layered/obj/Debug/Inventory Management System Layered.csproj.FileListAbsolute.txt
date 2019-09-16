@@ -38,3 +38,4 @@ C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Inven
 C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Inventory Management System Layered\obj\Debug\Inventory Management System Layered.csproj.CopyComplete
 C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Inventory Management System Layered\obj\Debug\Inventory Management System Layered.exe
 C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Inventory Management System Layered\obj\Debug\Inventory Management System Layered.pdb
+C:\Users\jontn\Documents\GitHub\IMS-C-\Inventory Management System Layered\Inventory Management System Layered\obj\Debug\Inventory_Management_System_Layered.FormEmpleados.resources

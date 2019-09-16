@@ -111,32 +111,33 @@ namespace Inventory_Management_System_Layered
         private void BtnSelect_Click(object sender, EventArgs e)
         {
             UserModel user = new UserModel();
+            string tabla = "Productos";
 
             dataGridView1.ClearSelection();
 
             if ((txtProducto.Text != "") && (txtProducto.Text != "IdProducto"))
             {
-                dataGridView1.DataSource = user.selectProductos(txtProducto.Text, "IdProducto");
+                dataGridView1.DataSource = user.select(txtProducto.Text, "IdProducto", tabla);
             }
             else if ((txtNombre.Text != "") && (txtNombre.Text != "Nombre"))
             {
-                dataGridView1.DataSource = user.selectProductos(txtNombre.Text, "Nombre");
+                dataGridView1.DataSource = user.select(txtNombre.Text, "Nombre", tabla);
             }
             else if ((txtDescripcion.Text != "") && (txtDescripcion.Text != "Descripcion"))
             {
-                dataGridView1.DataSource = user.selectProductos(txtDescripcion.Text, "Descripcion");
+                dataGridView1.DataSource = user.select(txtDescripcion.Text, "Descripcion", tabla);
             }
             else if ((txtPrecio.Text != "") & (txtPrecio.Text != "Precio"))
             {
-                dataGridView1.DataSource = user.selectProductos(txtPrecio.Text, "Precio");
+                dataGridView1.DataSource = user.select(txtPrecio.Text, "Precio", tabla);
             }
             else if ((txtCantidad.Text != "") & (txtCantidad.Text != "Cantidad"))
             {
-                dataGridView1.DataSource = user.selectProductos(txtCantidad.Text, "Cantidad");
+                dataGridView1.DataSource = user.select(txtCantidad.Text, "Cantidad", tabla);
             }
             else
             {
-                dataGridView1.DataSource = user.selectProductos();
+                dataGridView1.DataSource = user.select(tabla);
             }
 
             dataGridView1.AutoResizeColumns();

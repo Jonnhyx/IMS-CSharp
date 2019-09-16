@@ -107,8 +107,7 @@ namespace AccesoDatos
             Correo.Dispose();
         }
 
-
-        public DataTable selectProductos()
+        public void permisosUsuario()
         {
             using (var connection = GetConnection())
             {
@@ -116,19 +115,52 @@ namespace AccesoDatos
                 using (var command = new OleDbCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "select * from Productos";
+                    command.CommandText = "SELECT * FROM Permisos WHERE UserID=" + Soporte.UserCache.IdUser;
+                    command.CommandType = CommandType.Text;
+                    command.CommandType = CommandType.Text;
+                    OleDbDataReader reader = command.ExecuteReader();
+                    try
+                    {
+                        while (reader.Read())
+                        {
+                            UserCache.permisoProductos = reader.GetString(1);
+                            UserCache.permisoVentas = reader.GetString(2);
+                            UserCache.permisoClientes = reader.GetString(3);
+                            UserCache.permisoCompras = reader.GetString(4);
+                            UserCache.permisoProveedores = reader.GetString(5);
+                            UserCache.permisoEmpleados = reader.GetString(6);
+                            UserCache.permisoPagos = reader.GetString(7);
+                            UserCache.permisoReportes = reader.GetString(8);
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        MessageBox.Show("Error al Leer la tabla de permisos");
+                    }
+                }
+            }
+        }
+        public DataTable select(string tabla)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new OleDbCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "select * from " + tabla;
                     command.CommandType = CommandType.Text;
                     OleDbDataAdapter Adapter = new OleDbDataAdapter();
                     Adapter.SelectCommand = command;
-                    DataTable tabla = new DataTable();
-                    Adapter.Fill(tabla);
-                    return tabla;
+                    DataTable Grid = new DataTable();
+                    Adapter.Fill(Grid);
+                    return Grid;
                 }
 
             }
         }
 
-        public DataTable selectProductos(string parametro, string dato)
+        public DataTable select(string parametro, string dato, string tabla)
         {
             using (var connection = GetConnection())
             {
@@ -136,23 +168,24 @@ namespace AccesoDatos
                 using (var command = new OleDbCommand())
                 {
                     command.Connection = connection;
-                    if ((dato == "Cantidad") | (dato == "Precio")){
+                    if ((dato == "Cantidad") | (dato == "Precio") | (dato == "UserID"))
+                    {
                         
-                        command.CommandText = "Select * from Productos where " + dato + "=" + parametro;
+                        command.CommandText = "Select * from " + tabla + " where " + dato + "=" + parametro;
                     }
                     else
                     {
-                        command.CommandText = "Select * from Productos where " + dato + "=" + '"' + parametro + '"';
+                        command.CommandText = "Select * from " + tabla + " where " + dato + "=" + '"' + parametro +'"' + ';';
                     }
 
                     command.CommandType = CommandType.Text;
                     OleDbDataAdapter Adapter = new OleDbDataAdapter();
                     Adapter.SelectCommand = command;
-                    DataTable tabla = new DataTable();
+                    DataTable Grid = new DataTable();
 
                     try
                     {
-                        Adapter.Fill(tabla);
+                        Adapter.Fill(Grid);
                         
                     }
 #pragma warning disable CS0168 // La variable 'e' se ha declarado pero nunca se usa
@@ -161,7 +194,7 @@ namespace AccesoDatos
                     {
                         MessageBox.Show("El parámetro introducido es erroneo");
                     }
-                    return tabla;
+                    return Grid;
                 }
 
             }
@@ -188,7 +221,7 @@ namespace AccesoDatos
                     }
                 }
             }
-            return selectProductos();
+            return select("Productos");
         }
 
         public DataTable deleteProductos(string producto){
@@ -208,7 +241,7 @@ namespace AccesoDatos
                     }
                 }
             }
-            return selectProductos();
+            return select("Productos");
         }
 
         public DataTable updateProductos(string producto, string nombre, string descripcion, string precio, string cantidad)
@@ -234,39 +267,8 @@ namespace AccesoDatos
                     }
                 }
             }
-            return selectProductos();
+            return select("Productos");
         }
-
-        public void permisosUsuario()
-        {
-            using (var connection = GetConnection())
-            {
-                connection.Open();
-                using (var command = new OleDbCommand())
-                {
-                    command.Connection = connection;
-                    command.CommandText = "SELECT * FROM Permisos WHERE UserID=" + Soporte.UserCache.IdUser;
-                    command.CommandType = CommandType.Text;
-                    command.CommandType = CommandType.Text;
-                    OleDbDataReader reader = command.ExecuteReader();
-                    try{
-                        while (reader.Read()){
-                            UserCache.permisoProductos = reader.GetString(1);
-                            UserCache.permisoVentas = reader.GetString(2);
-                            UserCache.permisoClientes = reader.GetString(3);
-                            UserCache.permisoCompras = reader.GetString(4);
-                            UserCache.permisoProveedores = reader.GetString(5);
-                            UserCache.permisoEmpleados = reader.GetString(6);
-                            UserCache.permisoPagos = reader.GetString(7);
-                            UserCache.permisoReportes = reader.GetString(8);
-                        }
-                    }
-                    catch (Exception e)
-                    {
-                        MessageBox.Show("Error al Leer la tabla de permisos");
-                    }
-                }
-            }
-        }
+      
     }
 }

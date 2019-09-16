@@ -123,6 +123,10 @@ namespace Inventory_Management_System_Layered
             AbrirFormInPanel(productos);
         }
 
-       
+        private void BtnEMPLEADOS_Click(object sender, EventArgs e)
+        {
+            FormEmpleados empleados = new FormEmpleados();
+            AbrirFormInPanel(empleados);
+        }
     }
 }
